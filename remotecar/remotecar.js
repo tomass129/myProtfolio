@@ -139,12 +139,12 @@ p.nominalBounds = new cjs.Rectangle(-64,-17,128,34);
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(14).call(this.frame_14).wait(1));
 
-	// Actions
+	// Nav
 	this.playBtn = new lib.ProtoBtn();
 	this.playBtn.parent = this;
-	this.playBtn.setTransform(256,296.5);
+	this.playBtn.setTransform(400,294.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.playBtn).to({_off:true},14).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.playBtn).wait(15));
 
 	// Car
 	this.myCar = new lib.Symbol1();
@@ -154,7 +154,7 @@ p.nominalBounds = new cjs.Rectangle(-64,-17,128,34);
 	this.timeline.addTween(cjs.Tween.get(this.myCar).wait(2).to({scaleX:0.98,scaleY:0.98,y:172},0).wait(1).to({scaleX:0.97,scaleY:0.97,y:164.7},0).wait(1).to({scaleX:0.95,scaleY:0.95,y:157.5},0).wait(1).to({scaleX:0.94,scaleY:0.94,y:150.3},0).wait(1).to({scaleX:0.92,scaleY:0.92,y:143},0).wait(1).to({scaleX:0.9,scaleY:0.9,y:135.8},0).wait(1).to({scaleX:0.89,scaleY:0.89,y:128.6},0).wait(1).to({scaleX:0.87,scaleY:0.87,y:121.4},0).wait(1).to({scaleX:0.86,scaleY:0.86,y:114.1},0).wait(1).to({scaleX:0.84,scaleY:0.84,y:106.9},0).wait(1).to({scaleX:0.82,scaleY:0.82,y:99.7},0).wait(1).to({scaleX:0.81,scaleY:0.81,y:92.4},0).wait(1).to({scaleX:0.79,scaleY:0.79,y:85.2},0).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(459.9,346.6,142.2,166.9);
+p.nominalBounds = new cjs.Rectangle(506.8,346.6,239.3,164.9);
 // library properties:
 lib.properties = {
 	width: 550,
