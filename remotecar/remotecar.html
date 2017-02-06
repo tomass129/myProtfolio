@@ -13,6 +13,13 @@
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>remotecar</title>
 <!-- write your code here -->
+<style>
+  #animation_container {
+	position:absolute;
+	margin:auto;
+	left:0;right:0;
+  }
+</style>
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="https://rawgit.com/tomass129/myProtfolio/master/remotecar/remotecar.js"></script>
 <script src="https://rawgit.com/tomass129/myProtfolio/master/remotecar/keymaster.js"></script>
@@ -68,16 +75,16 @@ function handleComplete() {
 			lastW = iw; lastH = ih; lastS = sRatio;		
 		}
 	}
-	makeResponsive(false,'both',false,1);	
+	makeResponsive(true,'height',false,1);	
 	fnStartAnimation();
 }
 </script>
 <!-- write your code here -->
 </head>
-<body onload="init();" style="margin:auto">
-	<div id="animation_container" style="background-color:rgba(255, 5, 255, 1.00); max-width:100%; height:400px">
-		<canvas id="canvas" width="1200" height="400" style="position: absolute; display: block; background-color:rgba(255, 255, 25, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; max-width:100%; height:400px; position: absolute; left: 0px; top: 0px; display: block;">
+<body onload="init();" style="margin:0px;">
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1200px; height:400px">
+		<canvas id="canvas" width="1200" height="400" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1200px; height:400px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
 </body>
